@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>4 Image Grid</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #362c64);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+
+    .card {
+        text-align: center;
+        color: white;
+        transition: transform 0.4s ease;
+    }
+
+    .card img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 3px solid rgba(255,255,255,0.5);
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* GOD HOVER EFFECT 🔥 */
+    .card:hover img {
+        transform: scale(1.1) rotate(2deg);
+        border: 3px solid #00ffff;
+        box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+        filter: brightness(1.2);
+    }
+
+    .name {
+        margin-top: 15px;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+    .card:hover .name {
+        color: #ff0055;
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+    
+    <div class="card">
+        <img src="103882.jpg" alt="Ram">
+        <div class="name">Ram</div>
+    </div>
+
+    <div class="card">
+        <img src="1331483.jpg" alt="Ravi">
+        <div class="name">Ravi</div>
+    </div>
+
+    <div class="card">
+        <img src="Anime Desktop S One Piece Jpg Custom Gaming Mat Desk.jpg" alt="Tarun">
+        <div class="name">Tarun</div>
+    </div>
+
+    <div class="card">
+        <img src="download (1).jpg" alt="Navin">
+        <div class="name">Navin</div>
+    </div>
+
+</div>
+
+</body>
+</html>
